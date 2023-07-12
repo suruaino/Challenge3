@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-mobile.svg);
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--clr1);
+    padding: 1rem 1rem;
+
+    height: 100vh;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --clr1: rgb(245, 245, 245);
+    --btnhover: rgb(212, 212, 212);
+}
+
+header{
+    width: 100%;
+    padding: 0 2rem;
+}
+header img{
+    width: 7rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+main .hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 2rem;
+}
+main .hero .imgsect{
+    width: 100%;
+}
+main .hero .description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
+main .hero .description button{
+    width: 80%;
+    padding: .8rem 1rem;
+    background-color: var(--clr1);
+    color: var(--Violet);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px rgb(38, 38, 38);
+    cursor: pointer;
+}
+main .hero .description button:hover{
+    background-color: var(--btnhover);
+}
+main .hero .imgsect img{
+    width: 100%;
+   
+}
+main .hero h1{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+main .socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+main .socials div{
+    border: 1px solid var(--clr1);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+main .socials div:hover{
+    background-color: rgba(238, 130, 238, 0.224);
+}
+@media only screen and (min-width: 650px){
+    body{
+        background-image: url(images/bg-desktop.svg);
+    
+    }
+   
+    main .hero h1{
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+    main .hero .imgsect{
+        width: 100%;
+    }
+    main .hero .imgsect img{
+        width: 100%;
+    }
+    main .hero .description{
+        text-align: left;
+        align-items: start;
+        width: 100%;
+    }
+    main .hero .description p{
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-size: .9rem;
+    }
+    main .socials{
+        justify-content: center;
+    
+    }
+    main .hero .description button{
+        width: 40%;
+        padding: .8rem 1.5rem;
+        border-radius: 30px;
+        font-size: 1.5rem;
+       
+    }
+}
+
+
+@media only screen and (min-width: 920px){
+   
+    header img{
+        width: 14rem;
+    }
+    main{
+        padding: 0 2rem;
+    }
+    main .hero{
+        flex-direction: row;
+        gap: 2.5rem;
+        padding: 0 .5rem;
+        margin-top: 1rem;
+    }
+    main .hero h1{
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+
+
+    main .hero .imgsect{
+        width: 60%;
+    }
+    main .hero .imgsect img{
+        width: 100%;
+    }
+    main .hero .description{
+        text-align: left;
+        align-items: start;
+        width: 40%;
+    }
+    main .hero .imgsect img{
+        width: 97%;
+    }
+    main .hero .description{
+        padding-top: 2rem;
+    }
+    
+    main .hero .description button{
+        width: 40%;
+        padding: .8rem 1.5rem;
+        border-radius: 30px;
+        font-size: 1.5rem;
+       
+    }
+    main .socials{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+    
+    }
+    
+}
+
